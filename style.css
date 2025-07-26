@@ -1,0 +1,34 @@
+
+body {
+    background-color: black !important;
+}
+
+h1 {
+    color:ghostwhite !important;
+}
+
+p {
+    color:azure;
+    font-size: 16px;
+}
+
+.fullscreen-img {
+  height: 100vh;      /* Full screen height */
+  width: auto;        /* Optional: maintain aspect ratio */
+  object-fit: cover;  /* Optional: crop to fit nicely */
+  display: block;     /* Remove default inline spacing */
+}
+
+
+#image-box {
+  height: 100vh;
+  padding: 0;
+  overflow: hidden; /* Prevent any overflow whitespace */
+}
+
+.img-side {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
