@@ -7,9 +7,29 @@ h1 {
     color:ghostwhite !important;
 }
 
+h2 {
+    color:ghostwhite !important;
+}
+
+h3 {
+    color:ghostwhite !important;
+}
+
 p {
     color:azure;
     font-size: 16px;
+}
+
+p a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: azure;
+    text-decoration: underline;
 }
 
 .fullscreen-img {
@@ -18,7 +38,6 @@ p {
   object-fit: cover;  /* Optional: crop to fit nicely */
   display: block;     /* Remove default inline spacing */
 }
-
 
 #image-box {
   height: 100vh;
@@ -31,4 +50,202 @@ p {
   width: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* New Section Styles */
+.section-row {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* Timeline/Accordion Styles */
+.timeline {
+  max-width: 800px;
+}
+
+.timeline-item {
+  margin-bottom: 10px;
+}
+
+.accordion {
+  background-color: #1a1a1a;
+  color: ghostwhite;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid #333;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion:hover {
+  background-color: #2a2a2a;
+  border-color: #555;
+}
+
+.accordion.active {
+  background-color: #2a2a2a;
+  border-color: azure;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: azure;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.job-title {
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.job-years {
+  color: azure;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.panel {
+  background-color: black !important;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.panel ul {
+  padding: 20px 40px;
+  margin: 0;
+  color: ghostwhite !important;
+  list-style-type: none;
+}
+
+.panel li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 20px;
+  color: ghostwhite !important;
+}
+
+.panel li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: ghostwhite !important;
+}
+
+/* Education Section Styles */
+.education-content {
+  max-width: 800px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.school-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.degree-info {
+  font-size: 18px;
+  color: azure;
+  margin-bottom: 15px;
+}
+
+.coursework {
+  color: azure;
+  line-height: 1.6;
+}
+
+.coursework strong {
+  color: ghostwhite;
+}
+
+/* Projects Section Styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  border-color: azure;
+  transform: translateY(-2px);
+}
+
+.project-name {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: ghostwhite;
+}
+
+.project-description {
+  color: azure;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.project-tech {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.project-link a {
+  color: ghostwhite;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.project-link a:hover {
+  color: azure;
+  text-decoration: underline;
+}
+
+/* Footer adjustment */
+footer {
+  margin-top: 60px;
+  padding: 30px 0;
+  color: #888;
 }
